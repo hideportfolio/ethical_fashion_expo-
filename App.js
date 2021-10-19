@@ -2,14 +2,17 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Top from './src/Screens/Top.js'
-import BackImage from './src/Screens/Image'
+import Top from './src/Screens/Top.js';
+import Categorize from './src/Screens/Categorize.js';
+import Category from './src/Screens/Category.js';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Top></Top>
-      {/* <BackImage></BackImage> */}
+      {/* <Top></Top> */}
+      {/* <Categorize></Categorize> */}
+      <Category></Category>
     </View>
   );
 }
@@ -17,9 +20,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // flexDirection: "column",
-    // backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
   },
 });
